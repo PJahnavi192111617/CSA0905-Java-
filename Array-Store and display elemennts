@@ -1,0 +1,21 @@
+import java.util.*;
+class Storeanddisplayarray
+{
+	public static void main(String args[])
+	{
+		int n,i;
+		int a[] = new int[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the no of elements= ");
+		n= s.nextInt();
+		for(i=1;i<=n;i++)
+		{
+			a[i] = s.nextInt();
+		}
+		System.out.println("Elements are= ");
+		for(i=1;i<=n;i++)
+		{
+			System.out.println(+a[i]);
+		}
+	}
+}
