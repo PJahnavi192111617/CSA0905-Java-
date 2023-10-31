@@ -1,0 +1,23 @@
+import java.util.*;
+class Test
+{
+	public static void main(String args[])
+	{
+		int n1,n2,i,gcd=0,lcm;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number1=");
+		n1 = s.nextInt();
+		System.out.println("Enter the number2=");
+		n2 = s.nextInt();
+		for(i=1;i<=n1 && i<=n2;i++)
+		{
+			if(n1%i==0 && n2%i==0)
+			{
+				gcd=i;
+			}
+		}
+			System.out.println("Gcd="+gcd);
+			lcm=(n1*n2)/gcd;
+			System.out.println("lcm="+lcm);
+	}
+}
