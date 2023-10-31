@@ -1,0 +1,33 @@
+import java.util.*;
+class Practice
+{
+	public static void main(String args[])
+	{
+		int d,m,year;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the date=");
+		d = s.nextInt();
+		System.out.println("Enter the month= ");
+		m = s.nextInt();
+		System.out.println("Enter the year=");
+		year = s.nextInt();
+		if(d>31||m>12)
+		{
+			System.out.println("Invalid input");
+		}
+		else
+		{
+			if(year%4==0 && year%100!=0 || year%400==0)
+			{
+				System.out.println("Leap year");
+			}
+			else
+			{
+				System.out.println("Not a leap year");
+			}
+		}
+			
+	
+	}
+}
+	
