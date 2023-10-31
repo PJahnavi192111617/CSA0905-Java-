@@ -1,0 +1,27 @@
+import java.util.*;
+class Arithexce
+{
+	public static void main(String args[])
+	{
+		int a,b,c;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the values of a= ");
+		a=s.nextInt();
+		System.out.println("Enter the values of b= ");
+		b=s.nextInt();
+		try
+		{
+			c=a/b;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Division by zero error");
+			System.out.println("Division by zero error");
+		}
+		finally
+		{
+			System.out.println("Always executes");
+		}
+	}
+}
+		
