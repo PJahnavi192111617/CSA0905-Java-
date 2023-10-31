@@ -1,0 +1,27 @@
+import java.util.*;
+class Test
+{
+	public static void main(String args[])
+	{
+		int age;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the age=");
+		age = s.nextInt();
+		if(age>=0 && age<=8)
+		{
+			System.out.println("Kids");
+		}
+		else if(age>8 && age<=18)
+		{
+			System.out.println("Teenage");
+		}
+		else if(age>18 && age<=59)
+		{
+			System.out.println("Elders");
+		}
+		else if(age>60 && age<=80)
+		{
+			System.out.println("Senior Citizen");
+		}
+	}
+}
