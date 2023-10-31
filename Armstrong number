@@ -1,0 +1,26 @@
+import java.util.*;
+class Test
+{
+	public static void main(String args[])
+	{
+		int n,temp,rem,arm=0,r;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number=");
+		n = s.nextInt();
+		temp=n;
+		while(n>0)
+		{
+			rem=n%10;
+			arm=arm+(rem*rem*rem);
+			n=n/10;
+		}
+		if(temp==arm)
+		{
+			System.out.println("Armstrong");
+		}
+		else
+		{
+			System.out.println("Not a Armstrong");
+		}
+	}
+}
