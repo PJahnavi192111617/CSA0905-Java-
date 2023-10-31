@@ -1,0 +1,15 @@
+import java.util.*;
+class Practice
+{
+ 	public static void main(String args[])
+	{
+		double n,square,cube;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number=");
+		n = s.nextDouble();
+		square=n*n;
+		cube=n*n*n;
+		System.out.println("The square is= "+square);
+		System.out.println("The cube is="+cube);
+	}
+}
