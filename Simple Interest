@@ -1,0 +1,28 @@
+import java.util.*;
+class Practice
+{
+	public static void main(String args[])
+	{
+		double principalamount,roi,years,si,si1;
+		char c;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the prinicipal amount= ");
+		principalamount = s.nextDouble();
+		System.out.println("Enter the no of years=");
+		years = s.nextDouble();
+		System.out.println("Is customer Senior citizen(y/n):");
+		c = s.next().charAt(0);
+		if(c=='y'||c=='Y')
+		{
+			si=(principalamount*12*years)/100;
+			System.out.println(si);
+		}
+		if(c=='n'||c=='N')
+		{
+			si1=(principalamount*10*years)/100;
+			System.out.println(si1);
+		}
+	
+	}
+}
+	
