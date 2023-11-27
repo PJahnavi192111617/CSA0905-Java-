@@ -1,0 +1,14 @@
+import java.util.*;
+class Users{
+	public static void main(String args[]){
+		int user,staff_user,non_teaching,student;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Total users=");
+		user = s.nextInt();
+		System.out.println("Staff Users=");
+		staff_user = s.nextInt();
+		non_teaching=(staff_user/3);
+		student=user-(staff_user+non_teaching);
+		System.out.println("Student USers="+student);
+	}
+}
