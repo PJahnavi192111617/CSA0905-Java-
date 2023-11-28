@@ -1,0 +1,25 @@
+import java.util.*;
+class Largest{
+	public static void main(String args[])
+	{
+		int a[]=new int[100];
+		int i,n,largest;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the no of elements=");
+		n =s.nextInt();
+		System.out.println("Enter the elements=");
+		for(i=1;i<=n;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		largest=a[0];
+		for(i=1;i<=n;i++)
+		{
+			if(a[i]>a[0])
+			{
+				largest=a[i];
+			}
+		}
+		System.out.println("The largest element in the array is="+largest);
+	}
+}
