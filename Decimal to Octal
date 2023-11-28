@@ -1,0 +1,21 @@
+import java.util.*;
+class Practice{
+	public static void main(String args[])
+	{
+		int binary[] = new int[1000];
+		int n,i=0;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number=");
+		n = s.nextInt();
+		while(n>0)
+		{
+			binary[i]=n%8;
+			n=n/8;
+			i++;
+		}
+		for(i=i-1;i>=0;i--)
+		{
+			System.out.print(binary[i]);
+		}
+	}
+}
