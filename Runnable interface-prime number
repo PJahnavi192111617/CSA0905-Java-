@@ -1,0 +1,32 @@
+import java.util.*;
+class Cthread implements Runnable
+{
+	public void run()
+	{
+		int n,i,count=0;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number=");
+		n = s.nextInt();
+		for(i=1;i<=n;i++)
+		{
+			if(n%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println(n+" is prime");
+		}
+		else
+		{
+			System.out.println(n+"is not a prime");
+		}
+	}
+	public static void main(String args[])
+	{
+		Cthread c = new Cthread();
+		Thread t1 = new Thread(c);
+		t1.start();
+	}
+}
