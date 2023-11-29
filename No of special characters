@@ -1,0 +1,22 @@
+import java.util.*;
+class Specialch{
+	public static void main(String args[])
+	{
+		String s1;
+		int count=0,i,a;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the string=");
+		s1 = s.nextLine();
+		a = s1.length();
+		for(i=0;i<a;i++)
+		{
+			char ch = s1.charAt(i);
+			if(!(ch>='a' && ch<='z') && !(ch>='A' && ch<='Z') && !(ch==' ') ){
+				count++;
+			}
+		}
+	System.out.println("No of Special Characters="+count);
+	}
+}
+		
+		
