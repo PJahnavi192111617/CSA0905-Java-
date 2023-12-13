@@ -1,0 +1,54 @@
+class Member
+{
+	String name;
+	int age,salary;
+	String number,address;
+	public void printSalary(){
+		System.out.println(salary);
+	}
+}
+class Employee extends Member
+{
+	String specialization;
+}
+class Manager extends Member
+{
+	String department;
+}
+class Answer
+{
+ 	public static void main(String args[])
+	{
+		Employee e = new Employee();
+		e.name="jahnavi";
+		e.age=19;
+		e.number="6304108785";
+		e.address="srikalahasti,chittoor,andhra pradesh";
+		e.salary=25000;
+		e.specialization="Developer";
+
+		Manager m = new Manager();
+		m.name="ramesh";
+		m.age=34;
+		m.number="9876543210";
+		m.address="tirupati,andhra pradesh";
+		m.salary=50000;
+		m.department="IT";
+		
+		System.out.println("Employee details");
+		System.out.println("Employee name="+e.name);
+		System.out.println("age="+e.age);
+		System.out.println("number="+e.number);
+		System.out.println("address="+e.address);
+		System.out.println("salary="+e.salary);
+		System.out.println("specialization=is th"+e.specialization);
+    System.out.println("-------------------------------------------");
+    System.out.println("manager details");
+		System.out.println("name="+m.name);
+		System.out.println("age="+m.age);
+		System.out.println("number="+m.number);
+		System.out.println("address="+m.address);
+		System.out.println("salary="+m.salary);
+		System.out.println("Department"+m.department);
+	}
+}
