@@ -1,0 +1,60 @@
+public class Account {
+    private double balance;
+    private double interestRate;
+
+    
+    public Account(double initialBalance) {
+        balance = initialBalance;
+        interestRate = 0.02; 
+    }
+
+    
+    public Account()
+ {
+        balance = 0.0;
+        interestRate = 0.02; 
+    }
+
+    
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    
+    public void withdraw(double amount)
+ {
+        if (amount > balance)
+ {
+            System.out.println("Insufficient funds. A $5 penalty will be charged.");
+            balance -= 5.0; 
+        }
+ else
+ {
+            balance -= amount;
+        }
+    }
+
+    
+    public double getBalance()
+ {
+        return balance;
+    }
+
+    
+    public void computeInterest()
+ {
+        double interest = balance * interestRate;
+        balance += interest;
+    }
+
+    public static void main(String[] args) 
+	{
+        
+        Account myAccount = new Account(1000.0);
+        myAccount.deposit(500.0);
+        myAccount.withdraw(300.0);
+        myAccount.withdraw(1500.0); 
+        myAccount.computeInterest();
+        System.out.println("Current balance: $" + myAccount.getBalance());
+    }
+}
