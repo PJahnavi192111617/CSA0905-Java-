@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class CompositeNumberCounter {
+
+    private static boolean isComposite(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return true; 
+            }
+        }
+        return false; 
+    }
+    private static int countCompositeNumbers(int[] array) {
+        int count = 0;
+        for (int num : array) {
+            if (isComposite(num)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the number of elements in the array: ");
+        int size = scanner.nextInt();
+
+        
+        int[] elements = new int[size];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            elements[i] = scanner.nextInt();
+        }
+        scanner.close();
+
+        int compositeCount = countCompositeNumbers(elements);
+        System.out.println("Number of composite numbers in the array: " + compositeCount);
+    }
+}
