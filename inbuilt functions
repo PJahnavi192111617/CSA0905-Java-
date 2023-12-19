@@ -1,0 +1,15 @@
+import java.util.*;
+class A{
+	public static void main(String args[])
+	{
+		String s1="welcome to saveetha university";
+		String s2=" ";
+		s2=s1.replace('o','i');
+		System.out.println(s2);
+		int n=s1.length();
+		System.out.println("the length="+n);
+		s2=s1.toUpperCase();
+		System.out.println(s2);
+	}
+}
+		
